@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bop Your Socks Off</title>
+    <style>
+        body {
+            font-size: 100%;
+            line-height: 1.5;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-bottom: 20em;
+        }
+        .title {
+            width: 75vw;
+            font-size: 2rem;
+            font-style: italic;
+            margin: 25px auto;
+            text-align: center;
+        }
+        .label, .buttonToText, .buttonToHtml {
+            display: block;
+            font-size: 1.5em;
+        }
+        .label {
+            margin: 0 auto;
+            width: 75vw;
+        }
+        .buttonToText, .buttonToHtml {
+            margin: 30px auto;
+            padding: 10px 0;
+            width: 75vw;
+            border-radius: 10px;
+            box-shadow: 3px 3px 0 0 #888;
+            color: #0088ff;
+            font-size: 1.5em;
+        }
+        .input, .output {
+            display: block;
+            width: 75vw;
+            margin: 0 auto;
+            font-size: 1.5em;
+        }
+        .output {
+            border: 1px solid #ccc;
+            height: 10em;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Bop Talk Generator</div>
+    <div>
+        <label class="label" for="in">English</label>
+    </div>
+    <div>
+        <textarea class="input" id="in" cols="90" rows="5" wrap="soft"></textarea>
+    </div>
+    <div>
+        <button type="button" class="buttonToText">convert to text</button>
+    </div>
+    <div>
+        <button type="button" class="buttonToHtml">convert to html</button>
+    </div>
+    <div>
+        <label class="label" for="out">Bop</label>
+    </div>
+    <div>
+        <!-- <div class="output" id="out"></div> -->
+        <textarea class="output" id="out" cols="90" rows="5" wrap="soft" readonly></textarea>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
